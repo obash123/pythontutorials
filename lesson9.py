@@ -70,6 +70,16 @@ print(list7)
 # Sort a list of strings based on the frequency of characters in each string.
 
 
+def common(list1, list2):
+    common_elements = []
+    for element in list1:
+        if element in list2:
+            common_elements.append(element)
+    return common_elements
 
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
 
+result = common(list1, list2)
+print(result)
  
