@@ -44,6 +44,6 @@ n = int(input("Enter a number: "))
 if is_prime(n):
     print(" prime number.")
 else:
-    print(" not a prime number.")
+    print("not a prime number.")
 
 

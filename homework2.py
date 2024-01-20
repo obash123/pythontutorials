@@ -12,7 +12,7 @@ account_numbers = {
 }
 
 class Account:
-    def __init__(self, account_number, amount):
+    def __init__(self, account_number, amount): # this is a constructor . the things inside are parameters or arguments
         self.account_number = account_number
         self.amount = amount
 
