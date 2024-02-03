@@ -29,19 +29,21 @@
 
 
 class TestGrader:
-    def __init__(self, student_answers, correct_answers):
-        self.student_answers = student_answers
-        self.correct_answers = correct_answers
+    def __init__(self):
+        self.score = 0
 
-    def grade_test(self):
-        score = 0
-        for question_num in self.student_answers:
-            student_choices = self.student_answers[question_num]
-            correct_choices = self.correct_answers.get(question_num, [])
+
+    def grade_test(self,student_answers,correct_answers):
+        for question_num in student_answers:
+            student_choices = student_answers[question_num]
+            correct_choices = correct_answers.get(question_num, [])
 
             if student_choices == correct_choices:
-                score += 1
-        return score
+                self.score += 1
+        return self.score
+    
+
+
 
 
 student_answers = {
@@ -56,6 +58,9 @@ correct_answers = {
     3: ['A', 'C', 'D']
 }
 
-test_grader = TestGrader(student_answers, correct_answers)
-score = test_grader.grade_test()
+test_grader = TestGrader()
+score = test_grader.grade_test(student_answers,correct_answers)
+
+get_score = test_grader.score
+print(get_score)
 print("Student's score:", score)
