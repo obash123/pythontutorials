@@ -93,3 +93,12 @@ print(sorted_words)
 # print(list7)
 
 # check on the filter function, lambda, make old assignment a class, website practice
+
+
+
+x = lambda a : a + 10
+print(x(5))
+
+x = lambda a, b : a * b
+print(x(5, 6))
+
