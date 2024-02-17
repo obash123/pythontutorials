@@ -157,15 +157,6 @@ numbers_list = [3, 1, 4, 7, 2, 9, 5]
 # print(numbers_list[:-1])    
 print(find_local_maxima(numbers_list))
 
-
-
-
-
-
-
-
-
-
-
-
-
+import math
+print(math.degrees(math.pi / 2))
+print(round(6.5))
