@@ -457,3 +457,36 @@ print(my_account.get_account_number)
 print(my_account.get_account_holder_name)
 my_account.set_account_holder_name("obasola")
 print(my_account.get_account_holder_name)
+
+
+'''
+Problem Statement:
+
+Design a Python class called Animal that has the following attributes:
+
+name (string)
+species (string)
+age (integer)
+The Animal class should have the following methods:
+
+_init_: Initialize the name, species, and age attributes.
+make_sound: Prints a message that describes the sound the animal makes. The specific sound should be determined by the subclass.
+get_info: Prints a message that includes the animal's name, species, and age.
+Create two subclasses called Dog and Cat that inherit from the Animal class. The Dog and Cat classes should have the following attributes:
+
+Dog: breed (string)
+Cat: color (string)
+The Dog and Cat classes should also have the following methods:
+
+_init_: Initialize the breed or color attribute, as well as the name, species, and age attributes inherited from the Animal class.
+make_sound: Prints a message that describes the sound the specific animal makes. For example, a Dog object might print "Woof!" while a Cat object might print "Meow."
+
+Finally, create two instances of the Dog and Cat classes and call their get_info and make_sound methods.
+
+Notes:
+
+Use encapsulation to hide the implementation details of the Animal class and its subclasses.
+Use inheritance to share common attributes and methods between the Animal, Dog, and Cat classes.
+Use polymorphism to allow the Animal class's make_sound method to be overridden by its subclasses.
+Use abstraction to define the Animal class at a high level and let its subclasses provide the specific implementation details.
+'''
